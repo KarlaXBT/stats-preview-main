@@ -114,3 +114,49 @@ body {
   font-size: 1.1rem;
   letter-spacing: 2.2px;
 }
+
+@media (min-width: 1440px) {
+  .card {
+    flex-direction: row-reverse;
+    max-width: 111rem;
+    gap: 2rem;
+  }
+
+  .card__img,
+  .card__content {
+    width: 50%;
+  }
+
+  .card__content {
+    gap: 3rem;
+  }
+
+  .card__img img {
+    display: none;
+  }
+
+  .card__img {
+    background-image: url(images/image-header-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card__content {
+    padding: 8rem;
+    text-align: left;
+  }
+
+  .card__heading {
+    font-size: 3.6rem;
+  }
+
+  .card__description {
+    margin-bottom: 4rem;
+  }
+
+  .stats {
+    flex-direction: row;
+    gap: 6rem;
+  }
+}
